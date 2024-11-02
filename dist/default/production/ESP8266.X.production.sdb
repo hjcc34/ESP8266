@@ -1,0 +1,212 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F628A ]
+[d frameptr 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"3 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\strcmp.c
+[v _strcmp strcmp `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"17 E:\MPLAB XC\ESP8266.X\main.c
+[v _RX_DATO RX_DATO `II(v  1 e 1 0 ]
+"40
+[v _main main `(v  1 e 1 0 ]
+"13 E:\MPLAB XC\ESP8266.X\RS-232.c
+[v _Uart_Init Uart_Init `(v  1 e 1 0 ]
+"30
+[v _Uart_Send_Char Uart_Send_Char `(v  1 e 1 0 ]
+"36
+[v _Uart_Send_String Uart_Send_String `(v  1 e 1 0 ]
+"45
+[v _Uart_Read Uart_Read `(uc  1 e 1 0 ]
+"57
+[v _Uart_Read_String Uart_Read_String `(v  1 e 1 0 ]
+"22 E:\MPLAB XC\ESP8266.X/CFG_RS232.h
+[v _cadena cadena `[20]uc  1 e 20 0 ]
+"166 C:/Users/Familia CS/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f628a.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"228
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+[s S55 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"245
+[u S64 . 1 `S55 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES64  1 e 1 @6 ]
+[s S175 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"333
+[s S184 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+[u S189 . 1 `S175 1 . 1 0 `S184 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES189  1 e 1 @11 ]
+[s S22 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 CMIF 1 0 :1:6 
+`uc 1 EEIF 1 0 :1:7 
+]
+"405
+[u S31 . 1 `S22 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES31  1 e 1 @12 ]
+[s S270 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"703
+[s S279 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 ADDEN 1 0 :1:3 
+]
+[u S282 . 1 `S270 1 . 1 0 `S279 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES282  1 e 1 @24 ]
+"753
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"760
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+"767
+[v _CMCON CMCON `VEuc  1 e 1 @31 ]
+[s S81 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+"857
+[s S88 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+]
+[u S92 . 1 `S81 1 . 1 0 `S88 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES92  1 e 1 @129 ]
+"907
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"969
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+[s S228 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"986
+[u S237 . 1 `S228 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES237  1 e 1 @134 ]
+[s S207 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 CMIE 1 0 :1:6 
+`uc 1 EEIE 1 0 :1:7 
+]
+"1048
+[u S216 . 1 `S207 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES216  1 e 1 @140 ]
+[s S249 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"1161
+[u S258 . 1 `S249 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES258  1 e 1 @152 ]
+"1201
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"40 E:\MPLAB XC\ESP8266.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"53
+[v main@a a `uc  1 a 1 6 ]
+"97
+} 0
+"36 E:\MPLAB XC\ESP8266.X\RS-232.c
+[v _Uart_Send_String Uart_Send_String `(v  1 e 1 0 ]
+{
+"38
+[v Uart_Send_String@W W `uc  1 a 1 2 ]
+"36
+[v Uart_Send_String@INFO INFO `*.24uc  1 p 1 1 ]
+"43
+} 0
+"30
+[v _Uart_Send_Char Uart_Send_Char `(v  1 e 1 0 ]
+{
+[v Uart_Send_Char@INFO INFO `uc  1 p 1 wreg ]
+[v Uart_Send_Char@INFO INFO `uc  1 p 1 wreg ]
+[v Uart_Send_Char@INFO INFO `uc  1 p 1 0 ]
+"34
+} 0
+"13
+[v _Uart_Init Uart_Init `(v  1 e 1 0 ]
+{
+[v Uart_Init@baudios baudios `i  1 p 2 0 ]
+"28
+} 0
+"17 E:\MPLAB XC\ESP8266.X\main.c
+[v _RX_DATO RX_DATO `II(v  1 e 1 0 ]
+{
+"37
+} 0
+"3 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\strcmp.c
+[v _strcmp strcmp `(i  1 e 2 0 ]
+{
+[v strcmp@l l `*.4DCuc  1 p 1 0 ]
+[v strcmp@r r `*.24DCuc  1 p 1 1 ]
+"7
+} 0
+"57 E:\MPLAB XC\ESP8266.X\RS-232.c
+[v _Uart_Read_String Uart_Read_String `(v  1 e 1 0 ]
+{
+"59
+[v Uart_Read_String@cont_buf cont_buf `ui  1 a 2 5 ]
+"60
+[v Uart_Read_String@c c `uc  1 a 1 4 ]
+"57
+[v Uart_Read_String@Buf Buf `*.4uc  1 p 1 0 ]
+[v Uart_Read_String@s_buf s_buf `ui  1 p 2 1 ]
+"69
+} 0
+"45
+[v _Uart_Read Uart_Read `(uc  1 e 1 0 ]
+{
+"55
+} 0
